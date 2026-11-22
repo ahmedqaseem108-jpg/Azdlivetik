@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #09090f;
+    --bg-surface: #11111b;
+    --bg-elevated: #171726;
+    --accent-purple: #7c3aed;
+    --accent-blue: #00d4ff;
+    --accent-gold: #ffd700;
+  }
+
+  body {
+    font-family: "Cairo", "Outfit", system-ui, -apple-system, sans-serif;
+    background-color: #09090f;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  .font-display {
+    font-family: "Outfit", "Cairo", sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: "JetBrains Mono", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Transparent OBS Browser Source Mode */
+html.obs-transparent,
+html.obs-transparent body,
+html.obs-transparent #root {
+  background: transparent !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 25, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.35);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.65);
+}
+
+@keyframes sheenSlide {
+  0% {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(240%) skewX(-18deg);
+  }
+}
+
+.animate-sheen {
+  animation: sheenSlide 2.6s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}

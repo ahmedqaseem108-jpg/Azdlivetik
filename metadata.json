@@ -1,0 +1,8 @@
+{
+  "name": "Remix LIVE EFFECTS PRO",
+  "description": "منصة احترافية لاستقبال أحداث TikTok LIVE وتشغيل مؤثرات بصرية وصوتية فورية مع ربط مباشر ببرنامج OBS Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
